@@ -2,5 +2,5 @@ module.exports = {
   siteMetadata: {
     title: "taste-landing",
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-sass`],
 };
