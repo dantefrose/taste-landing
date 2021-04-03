@@ -16,7 +16,6 @@ html {
 
 body {
     margin: 0;
-	padding-top: 1%;
     min-height: 110%;
 	background: linear-gradient(-45deg, $taste-color-bg, $taste-color-4, $taste-color-3);
 	background-size: 400% 400%;
@@ -35,6 +34,10 @@ body {
 	}
 }
 
+.container {
+	padding: 0.5rem;
+}
+
 .left-menu {
 	padding-left: 1rem;
 }
@@ -46,17 +49,22 @@ body {
 }
 
 .right-icon {
-	padding: 1rem;
+	padding: 0.5rem;
 }
 
 .title {
-    color: $taste-color-1;
+    color: black;
 }
 
 .subtitle {
-    color: $taste-color-1;
+    color: black;
 }
 
 a {
-    color: $taste-color-2;
+    color: black;
+}
+
+a:hover {
+	color: $taste-color-2;
+
 }

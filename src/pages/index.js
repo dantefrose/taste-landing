@@ -11,29 +11,29 @@ library.add(fab);
 const Index = () => (
   <div className="container">
     <div className="columns">
-      <div className="left-menu column is-one-third">
-        <div className="subtitle is-2">
+      <div className="left-menu column is-narrow">
+        <div className="subtitle is-3">
           <Link to="/ingredients">Ingredients</Link>
         </div>
-        <div className="subtitle is-2">
+        <div className="subtitle is-3">
           <a href="https://onlydfr.creator-spring.com/" >Take Home Plate</a>
         </div>
-        <div className="subtitle is-2">
+        <div className="subtitle is-3">
           <Link to="/secret-recipe">Secret Recipe</Link>
         </div>
       </div>
-      <div className="cast-photo column is-one-third">
+      <div className="cast-photo column">
         <img className="image is-fullwidth" src={poster2} />
       </div>
-      <div className="right-menu column is-one-third">
+      <div className="right-menu column is-narrow">
           <div className="right-icon">
-            <FontAwesomeIcon size="3x" icon={["fab", "facebook"]}/>
+            <FontAwesomeIcon size="2x" icon={["fab", "facebook"]}/>
           </div>
           <div className="right-icon">
-            <FontAwesomeIcon size="3x" icon={["fab", "instagram"]}/>
+            <FontAwesomeIcon size="2x" icon={["fab", "instagram"]}/>
           </div>
           <div className="right-icon">
-            <FontAwesomeIcon size="3x" icon={["fab", "tiktok"]}/>
+            <FontAwesomeIcon size="2x" icon={["fab", "tiktok"]}/>
           </div>
       </div>
     </div>

@@ -12,7 +12,8 @@ function SecretRecipe() {
     e.preventDefault()
     const input = `${tablespoon}${cups}${diced}${pinch}`
     console.log(input)
-    if (input === "1234") {
+    // should this be case sensitive?
+    if (input === "JeremiahJohnJoshuaJames") {
       navigate('/hidden-page/')
     }
   }
