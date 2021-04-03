@@ -5,6 +5,10 @@ import poster2 from "../images/poster2.png"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import "@fortawesome/fontawesome-svg-core/styles.css"
+// Prevent fontawesome from adding its CSS since we did it manually above:
+import { config } from "@fortawesome/fontawesome-svg-core"
+config.autoAddCss = false; /* eslint-disable import/first */
 
 library.add(fab);
 
@@ -27,13 +31,19 @@ const Index = () => (
       </div>
       <div className="right-menu column is-narrow">
           <div className="right-icon">
-            <FontAwesomeIcon size="2x" icon={["fab", "facebook"]}/>
+            <a href="https://www.facebook.com/curatedbyDFR/" target="_blank">
+              <FontAwesomeIcon size="2x" icon={["fab", "facebook"]}/>
+              </a>
           </div>
           <div className="right-icon">
-            <FontAwesomeIcon size="2x" icon={["fab", "instagram"]}/>
+            <a href="https://www.instagram.com/taste_dfr/" target="_blank">
+              <FontAwesomeIcon size="2x" icon={["fab", "instagram"]}/>
+              </a>
           </div>
           <div className="right-icon">
-            <FontAwesomeIcon size="2x" icon={["fab", "tiktok"]}/>
+            <a href="https://www.tiktok.com/@taste_dfr?lang=en" target="_blank">
+              <FontAwesomeIcon size="2x" icon={["fab", "tiktok"]}/>
+              </a>
           </div>
       </div>
     </div>
